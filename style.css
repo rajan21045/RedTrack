@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)),
+        url("img/signin-background.jpeg");
+    background-position: center;
+    background-size: cover;
+    
+    position: relative;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center; 
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    height: 4px;
+    width: 30px;
+    border-radius: 3px;
+    background: #3c00a0;
+
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a{
+    color: #3c00a0;
+    text-decoration: none;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+   flex-basis: 48%;
+   background: #3c00a0;
+   color: #fff;
+   height: 40px;
+   border-radius: 20px;
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   transition: background 1s;
+}
+
+.input-group{
+    height: 280px;
+}
+
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+ 
+
+
+
+/* Hero Section Starts From Here */
+.hero {
+    height: 95vh; /* full screen height */
+    width: 100%;
+    background-image: url('img/bg.png');
+    background-size: cover;       /* fill the whole area */
+    background-position: center;  /* keep image centered */
+    background-repeat: no-repeat; /* no repeating */
+    display: flex;
+    align-items: center;
+    padding-left: 80px; /* space for text */
+}
+
+.hero-content {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.hero-content #pass{
+    font-weight: lighter;
+    font-size: 15px;
+}
+/* Hero Section Ends Here */
+
+
+/* About Us Section Starts From Here */
+ .about-system {
+    text-align: center;
+    padding: 80px 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-system h2 {
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.about-description {
+    max-width: 990px;
+    margin: 0 auto 50px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.about-features {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    text-align: center;
+    max-width: 450px;
+}
+
+.check-icon {
+    font-size: 26px;
+    color: #6a0dad; /* purple tick */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.feature-box p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+/* About Us Section Ends Here */
+
+
+
+/* Why we use hlb */
+/* WHY SECTION */
+.why-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.why-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.why-image img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.why-text {
+    flex: 1;
+}
+
+.why-text h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.why-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .why-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .why-text {
+        text-align: left;
+    }
+}
+/* Why we use hlb */
+
+
+
+/* meet our team section's css starts from here */
+/* Meet Our Team Section */
+.team-section {
+    background: #fafafa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+}
+
+.team-subtitle {
+    color: #555;
+    font-size: 16px;
+}
+
+.team-card {
+    background: #fff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.team-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.team-role {
+    color: #6a0dad;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.team-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.team-btn {
+    display: block;
+    background: #6a0dad;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.team-btn:hover {
+    background: #520e90;
+}
+
+/* Meet our team sections ends Here */
+
+/* Partnership Section's Css Start From Here */
+.partners {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f8f8;
+}
+
+.partners h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.partners p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Partner container */
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+/* Each partner item */
+.partner-item {
+    text-align: center;
+}
+
+/* Circular logo */
+.logo-circle {
+    width: 220px;
+    height: 220px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    padding: 20px;
+}
+
+.logo-circle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.logo-circle img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Partner name */
+.partner-name {
+    margin-top: 12px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Partnership Section's Css Ends Here */
+
+
+
+/* event gallary section starts from here */
+
+.img-gal {
+    width: 85%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    overflow: visible;
+}
+
+
+.img-box {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* rotate image BOX on hover */
+.img-box {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-origin: center;
+}
+
+.img-box:hover {
+    transform: rotate(-6deg) scale(1.06);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+}
+/* rotate image Box on hovar ends here */
+
+#gal h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+/* event galllary section ends here */
+
+
+/* footer section starts from here*/
+/* Base Footer Styling */
+.footer {
+    background-color: #24262b; /* Dark background */
+    padding: 70px 0; /* Vertical padding */
+    line-height: 1.5;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Container and Row Setup for Layout */
+.con {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+/* Footer Column Styling */
+.footer-col {
+    width: 25%; /* 4 columns on desktop */
+    padding: 0 15px;
+}
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+/* Underline effect for headings */
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63; /* Accent color */
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+/* Styling for the Link Lists */
+.footer-col ul {
+    list-style: none; /* Remove bullet points */
+    padding-left: 0;
+}
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none; /* Remove underline */
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px; /* Slight hover animation */
+}
+
+/* Social Media Icons Styling */
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%; /* Circle shape */
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* Responsiveness (Example for smaller screens) */
+@media(max-width: 768px) {
+    .footer-col {
+        width: 50%; /* 2 columns on tablets */
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 576px) {
+    .footer-col {
+        width: 100%; /* 1 column on mobile */
+    }
+}
+
+/* footer section ends here */
